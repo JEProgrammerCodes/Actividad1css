@@ -1,0 +1,118 @@
+body{
+    font-family:Arial, Helvetica, sans-serif
+}
+.activida1{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+}
+
+.practica1{
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background-color: aqua;
+}
+#imagen-mia{
+    width: 300px;
+}
+button{
+    background-color: rgb(47, 0, 255);
+    color: rgb(255, 255, 255);
+    text-size-adjust: 30px;
+    border: 15px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    width: 150px;
+    height:30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.practica2{
+    text-align: center;
+    display: inline;
+    display: contents;
+    flex-wrap: wrap;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#productos {
+    display: flex; /* Habilita Flexbox */
+    flex-wrap: wrap; /* Permite que los productos se ajusten a nuevas líneas si es necesario */
+    justify-content: space-around; /* Espacia uniformemente los productos */
+    padding: 20px; /* Espaciado interno del contenedor */
+}
+
+.producto {
+    background-color: #c2bebe;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(2, 2, 2, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 30%; /* Ajusta el ancho de cada tarjeta */
+    margin: 10px; /* Espaciado entre tarjetas */
+    color: #000000;
+}
+
+.imagen {
+    width: 100%; /* Asegúrate de que la imagen ocupe todo el ancho del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+    border-radius: 10px; /* Bordes redondeados para la imagen */
+}
+
+.producto:hover {
+    transform: scale(1.05); /* Escala la tarjeta al pasar el mouse */
+    box-shadow: 0 10px 20px rgba(2, 2, 2, 0.7); /* Aumenta la sombra al pasar el mouse */
+}
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+}
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.menu li {
+    position: relative;
+    margin: 0 15px;
+}
+
+.menu li a {
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.menu li a:hover {
+    background-color: #444;
+}
+
+.submenu {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    padding: 0;
+    list-style: none;
+}
+
+.submenu li a {
+    padding: 10px;
+    text-align: left;
+}
+
+.menu li:hover .submenu {
+    display: block;
+}
